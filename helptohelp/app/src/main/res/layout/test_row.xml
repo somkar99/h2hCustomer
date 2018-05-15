@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cvTest"
+    android:layout_width="120dp"
+    android:layout_height="100dp"
+    android:layout_margin="4dp"
+    android:elevation="5dp"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <com.github.siyamed.shapeimageview.CircularImageView
+            android:id="@+id/ivHomeService"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_gravity="center"
+            android:scaleType="center"/>
+
+        <TextView
+            android:id="@+id/tvTestName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="40dp"
+            android:gravity="center"
+            android:padding="5dp"
+            android:paddingLeft="8dp"
+            android:singleLine="true"
+            android:text=" Sanket "
+            android:maxLines="2"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

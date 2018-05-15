@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:id="@+id/llHeaderDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="50dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/tvDetails"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Details"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/tvVendorlist"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Vendor List"
+            android:gravity="center"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llHeader2"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:weightSum="2"
+        android:orientation="horizontal">
+
+        <View
+            android:id="@+id/viewDetails"
+            android:layout_width="0dp"
+            android:layout_height="3dp"
+            android:layout_weight="1"
+            android:background="@color/black"></View>
+
+        <View
+            android:id="@+id/viewVendorlist"
+            android:layout_width="0dp"
+            android:layout_height="3dp"
+            android:layout_weight="1"
+            android:background="@color/green_50"></View>
+
+
+
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.99"
+        android:fillViewport="true">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+
+            <LinearLayout
+                android:id="@+id/llDeatils"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="400dp"
+                android:orientation="vertical"
+                android:padding="8sp">
+
+
+
+                <TextView
+                    android:id="@+id/tvSelectService"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="40dp"
+                    android:text="Service Details"
+                    android:background="@color/green"
+                    android:textColor="@color/white"
+                    android:gravity="center_vertical"
+                    android:textSize="18sp"
+                    android:padding="4dp"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:text="Selected Service"
+                    android:padding="4dp"
+                    android:textStyle="bold"
+                    android:gravity="center_vertical"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:id="@+id/tvServiceName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:text="sasasasas"
+                    android:padding="4dp"
+                    android:gravity="center_vertical"
+                    android:textSize="16sp"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/grey222"
+                    android:padding="8dp"></View>
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rcvGetData"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+
+                </android.support.v7.widget.RecyclerView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="30dp"
+                    android:text="Address"
+                    android:padding="4dp"
+                    android:textStyle="bold"
+                    android:textSize="16sp"/>
+
+
+                <TextView
+                    android:id="@+id/tvFullAddress"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:padding="4dp"
+                    />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/grey222"
+                    android:padding="4dp"></View>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:padding="4dp"
+                        android:minHeight="25dp"
+                        android:layout_weight="0.5"
+                        android:textSize="16sp"
+                        android:text="Date of Service"/>
+
+                    <TextView
+                        android:id="@+id/tvDateOfService"
+                        android:layout_width="0dp"
+                        android:padding="4dp"
+                        android:layout_weight="0.5"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/grey222"
+                    android:padding="4dp"></View>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="1"
+                    android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:layout_weight="0.5"
+                    android:minHeight="25dp"
+                    android:padding="4dp"
+                    android:text="Time of Service"/>
+
+                <TextView
+                    android:id="@+id/tvTimeOfService"
+                    android:layout_width="0dp"
+                    android:padding="4dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llVendorlist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone"
+                >
+
+            <TextView
+                android:id="@+id/tvVendorList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Vendors List"
+                android:paddingLeft="8dp"
+                android:textSize="18sp"
+
+                android:textStyle="bold"/>
+
+
+                <TextView
+                    android:id="@+id/tvNoVendorFound"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="No Vendors Found"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:gravity="center"
+                    android:visibility="gone"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rcvMyReqVendors"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="400dp">
+
+
+            </android.support.v7.widget.RecyclerView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="bottom">
+
+                <Button
+                    android:id="@+id/cbHire"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:background="@drawable/button_curve"
+                    android:text="Hire"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+
+                    />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</LinearLayout>

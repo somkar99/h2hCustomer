@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:weightSum="1">
+
+    <ImageView
+        android:layout_width="180dp"
+        android:layout_height="60dp"
+        android:minWidth="150dp"
+        android:src="@drawable/h2hlogo"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign in"
+        android:textColor="@color/black"
+        android:layout_marginTop="16dp"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:gravity="center_horizontal"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".4"></View>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:weightSum="1">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/userid_icon"
+            android:scaleType="centerInside"
+            android:padding="4dp"
+            />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="8dp"
+            >
+
+            <EditText
+                android:id="@+id/etUsername"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Email/MobileNo"
+                android:paddingLeft="8dp"
+                android:textColorHint="@color/lightgrey"
+                android:textColor="@color/lightgrey"
+                android:inputType="text"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="8dp"
+        android:weightSum="1">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/passnew"
+            android:scaleType="centerInside"
+            android:padding="6dp"
+            />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="8dp"
+            >
+
+            <EditText
+                android:id="@+id/etPassword"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Password"
+                android:paddingLeft="8dp"
+                android:textColorHint="@color/lightgrey"
+                android:textColor="@color/lightgrey"
+                android:inputType="textPassword"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvForgetPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="8dp"
+        android:text="Forgot Password?" />
+
+    <CheckBox
+        android:id="@+id/cbRemeberMe"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text="Remember me"
+        android:textColor="@color/grey"
+        android:layout_marginLeft="18dp"/>
+
+
+    <Button
+        android:id="@+id/cbLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="56dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:text="Login"
+        android:textColor="@color/white"
+        android:background="@drawable/border_curve_green"
+        />
+
+
+    <TextView
+        android:id="@+id/tvSignUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:textSize="18sp"
+        android:clickable="true"
+        android:text="Sign up?"
+
+        android:gravity="center_horizontal"/>
+</LinearLayout>

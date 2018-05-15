@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background">
+
+        <ImageView
+            android:id="@+id/imageView29"
+            android:layout_width="183dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="8dp"
+            android:src="@drawable/h2hlogo"
+            app:layout_constraintStart_toEndOf="@+id/guideline"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/ivFName"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:contentDescription="TODO"
+            android:padding="8dp"
+            android:src="@drawable/userid_icon"
+            app:layout_constraintBottom_toBottomOf="@+id/tiFName"
+            app:layout_constraintRight_toLeftOf="@id/tiFName"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tiFName" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/tiFName"
+            android:layout_width="0dp"
+            android:layout_height="59dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/ivFName"
+            app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+            <EditText
+                android:id="@+id/etFName"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="First Name"
+                android:inputType="textNoSuggestions|textCapWords"
+                android:textColor="@color/grey"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <ImageView
+            android:id="@+id/ivLName"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:padding="8dp"
+            android:src="@drawable/userid_icon"
+            app:layout_constraintBottom_toBottomOf="@+id/tiLName"
+            app:layout_constraintEnd_toStartOf="@+id/guideline"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tiLName" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/tiLName"
+            android:layout_width="0dp"
+            android:layout_height="65dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/ivLName"
+            app:layout_constraintTop_toBottomOf="@id/tiFName">
+
+            <EditText
+                android:id="@+id/etLName"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="textNoSuggestions|textCapWords"
+                android:textColor="@color/grey"
+                android:hint="Last Name" />
+
+
+        </android.support.design.widget.TextInputLayout>
+
+        <ImageView
+            android:id="@+id/ivEmail"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="8dp"
+            android:contentDescription="TODO"
+            android:padding="8dp"
+            android:src="@drawable/userid_icon"
+            app:layout_constraintBottom_toBottomOf="@+id/tiEmail"
+            app:layout_constraintEnd_toStartOf="@+id/tiEmail"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tiEmail" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/tiEmail"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="28dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/guideline"
+            app:layout_constraintTop_toBottomOf="@id/tiLName">
+
+            <EditText
+                android:id="@+id/etEmail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/grey"
+                android:inputType="textEmailAddress"
+                android:hint="Email" />
+
+
+        </android.support.design.widget.TextInputLayout>
+
+        <ImageView
+            android:id="@+id/ivMobile"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:contentDescription="TODO"
+            android:padding="8dp"
+            android:src="@drawable/userid_icon"
+            app:layout_constraintBottom_toBottomOf="@+id/tiMobile"
+            app:layout_constraintEnd_toStartOf="@+id/tiMobile"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tiMobile" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/tiMobile"
+            android:layout_width="0dp"
+            android:layout_height="59dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/ivMobile"
+            app:layout_constraintTop_toBottomOf="@id/tiEmail">
+
+            <EditText
+                android:id="@+id/etMobile"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/grey"
+                android:inputType="number"
+                android:hint="Mobile No" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <ImageView
+            android:id="@+id/ivPassword"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:contentDescription="TODO"
+            android:padding="12dp"
+            android:src="@drawable/password_icon"
+            app:layout_constraintBottom_toBottomOf="@+id/tiPassword"
+            app:layout_constraintEnd_toStartOf="@+id/guideline"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tiPassword" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/tiPassword"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/ivPassword"
+            app:layout_constraintTop_toBottomOf="@id/tiMobile">
+
+            <EditText
+                android:id="@+id/etPassword"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/grey"
+                android:inputType="textPassword"
+                android:hint="Password" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <ImageView
+            android:id="@+id/ivCPassword"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:contentDescription="TODO"
+            android:padding="12dp"
+            android:src="@drawable/password_icon"
+            app:layout_constraintBottom_toBottomOf="@+id/tiCPassword"
+            app:layout_constraintEnd_toStartOf="@+id/tiCPassword"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tiCPassword" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/tiCPassword"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/ivCPassword"
+            app:layout_constraintTop_toBottomOf="@id/tiPassword">
+
+            <EditText
+                android:id="@+id/etCPassword"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/grey"
+                android:inputType="textPassword"
+                android:hint="Confirm Password" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <ImageView
+            android:id="@+id/ivLanguage"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:contentDescription="TODO"
+            android:padding="12dp"
+            android:src="@drawable/lang_icon"
+            app:layout_constraintBottom_toBottomOf="@+id/tiLanguage"
+            app:layout_constraintEnd_toStartOf="@+id/tiLanguage"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tiLanguage" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/tiLanguage"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/ivLanguage"
+            app:layout_constraintTop_toBottomOf="@id/tiCPassword">
+
+            <EditText
+                android:id="@+id/etLanguage"
+                android:layout_width="match_parent"
+                android:textColor="@color/grey"
+                android:layout_height="match_parent"
+                android:inputType="text"
+                android:hint="Language" />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="72dp"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="303dp"
+            android:layout_height="63dp"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/border"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp"
+            android:text="Get OTP"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/checkBox" />
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="108dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="Accecpt Terms Conditions"
+            app:layout_constraintBottom_toTopOf="@+id/button"
+            app:layout_constraintTop_toBottomOf="@+id/tiLanguage"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="Sign Up"
+            android:textAppearance="?android:textAppearanceLarge"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView29" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView29"
+            app:layout_constraintEnd_toStartOf="@+id/imageView29"
+            app:layout_constraintHorizontal_bias="0.32"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imageView29"
+            app:srcCompat="@drawable/logo" />
+
+
+    </android.support.constraint.ConstraintLayout>
+
+
+</ScrollView>

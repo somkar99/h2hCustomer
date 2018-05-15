@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="4"
+    android:background="@color/grey">
+    
+    <LinearLayout
+        android:id="@+id/llFHome"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:weightSum="1">
+        
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".5"
+            android:src="@drawable/home"
+            android:layout_marginTop="8dp"
+            />
+        
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".5"
+            android:text="Home"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:paddingBottom="3dp"
+            android:textSize="12dp"/>
+        
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/llFMsg"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".5"
+            android:src="@drawable/message"
+            android:tint="@color/white"
+            android:layout_marginTop="8dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".5"
+            android:text="Messages"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:paddingBottom="3dp"
+            android:textSize="12dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llFSetting"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".5"
+            android:src="@drawable/settings"
+            android:tint="@color/white"
+            android:layout_marginTop="8dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".5"
+            android:text="Settings"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:paddingBottom="3dp"
+            android:textSize="12dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llFBooking"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".5"
+            android:src="@drawable/booking"
+            android:layout_marginTop="8dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".5"
+            android:text="Bookings"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:paddingBottom="3dp"
+            android:textSize="12dp"/>
+
+    </LinearLayout>
+
+
+
+
+    
+
+</LinearLayout>

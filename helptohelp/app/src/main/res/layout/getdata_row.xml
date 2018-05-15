@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tvQuestions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Que : How Are you?\nAns : I m fine. Thank you!"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="4dp"></View>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey111"></View>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="4dp"></View>
+
+</LinearLayout>

@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="3">
+
+    <LinearLayout
+        android:id="@+id/llRCVShowAdd"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="2.99"
+
+        android:weightSum="1">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rcvShowAdd"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".99"
+        android:layout_margin="8dp"/>
+
+        <TextView
+            android:id="@+id/tvAddNewAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="+  Add a new address"
+            android:minHeight="48dp"
+            android:textColor="@color/blueColor"
+            android:gravity="center_vertical"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:paddingLeft="8dp"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/lightgrey"></View>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llAddAddress"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2.99"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:weightSum="2.7">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.7">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:gravity="center_vertical"
+                android:text="Where do you need the Service?"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_weight="0.35"
+            android:background="@drawable/edittext_border"
+            android:orientation="vertical">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:editable="false"
+                android:hint="Flat/Building/Street"
+                android:paddingLeft="10dp"
+                android:paddingTop="4dp"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/etBuilding1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:paddingLeft="10dp"
+                android:paddingTop="4dp"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="0.35"
+            android:background="@drawable/edittext_border"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:editable="false"
+                    android:hint="Locality"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="4dp"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tvChangeAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="Change"
+                    android:textColor="@color/green_800"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/etLocality"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:paddingLeft="10dp"
+                android:paddingTop="4dp"
+                android:editable="false"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.25"></View>
+
+        <RadioGroup
+            android:id="@+id/rgAdd"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="15dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rbRes"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:buttonTint="@color/green"
+                android:checked="true"
+                android:text="Home" />
+
+            <RadioButton
+                android:id="@+id/rbWork"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:buttonTint="@color/green"
+                android:text="Office" />
+
+            <RadioButton
+                android:id="@+id/rbOtherAdd"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:buttonTint="@color/green"
+                android:text="Other" />
+        </RadioGroup>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"></View>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey"></View>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/cbContinue"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_margin="8dp"
+        android:background="@drawable/button_border"
+        android:text="Continue with this address"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/cbSave"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_margin="8dp"
+        android:background="@drawable/button_border"
+        android:text="Save"
+        android:textAllCaps="false"
+        android:visibility="gone"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/cbUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_margin="8dp"
+        android:background="@drawable/button_border"
+        android:text="Update"
+        android:textAllCaps="false"
+        android:visibility="gone"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+</LinearLayout>

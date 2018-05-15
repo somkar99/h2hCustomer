@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+
+
+     <string name="HowItWorks">1.H2H 100% स्वार्थरहित प्रदान करता है और कोई कमीशन नहीं लेता है । \n\n2.आगे बढ़ने से पहले किसी भी काम उद्धरण के लिए प्रदान किया जाएगा ।   \n\n3.निरीक्षण / यदि कोई सेवा नहीं ली जाती है तो
+निरीक्षण शुल्क / दौरे के शुल्कों का भुगतान करना होगा.इन्हें अंतिम चरण के खिलाफ समायोजित किया जाएगा । </string>
+
+    <string name="termsandCondn">नियम और शर्तें</string>
+
+    <string name="selected_item">चयनित उत्पाद:</string>
+
+    <string name="Rs">\u20B9</string>
+
+
+    //Personalinfo
+    <string name="Name">नाम</string>
+    <string name="UserName_Mandatory">उपयोगकर्ता का नाम*</string>
+    <string name="Gender_Mandatory">लिंग*</string>
+    <string name="Category_Mandatory">वर्ग*</string>
+    <string name="Male">पुरुष</string>
+    <string name="Female">महिला</string>
+    <string name="DifferentlyAbled">दिव्यांग</string>
+    <string name="Women">महिला</string>
+    <string name="Elderly">Elderly</string>
+    <string name="General">बुज़ुर्ग</string>
+    <string name="AlternateNo">दूसरा फ़ोन नंबर</string>
+    <string name="Landline">लैंडलाइन नंबर</string>
+    <string name="ResAdd">निवासी पता</string>
+    <string name="Reset">रीसेट</string>
+    <string name="Save">सुरक्षित करना</string>
+    <string name="ContactDetails">संपर्क विवरण*</string>
+    <string name="AddAddress">पता जोड़ने के लिए यहां क्लिक करें</string>
+
+    <string name="address">घर का पता</string>
+
+    <string name="PrimaryBusiness">प्राथमिक व्यवसाय</string>
+    <string name="MobileNumber">मोबाइल नंबर</string>
+
+    <string name="emailid">ईमेल</string>
+
+
+    <string name="map_api_key">AIzaSyAeRYCo3X9eNwKIoEZYPHLmLKeEpzHuBws</string>
+
+    <string name="addLine1">पता पंक्ति 1</string>
+    <string name="addLine2">पता पंक्ति 2</string>
+    <string name="addCity">शहर </string>
+    <string name="addState">राज्य </string>
+    <string name="addPincode">पिन कोड</string>
+
+
+    <!-- start -->
+
+    <string name="HomeServiceCategory">सेवा श्रेणी</string>
+    <string name="HomeArticles">सामग्री</string>
+    <string name="HomeServiceName">सेवा का नाम</string>
+    <string name="NavigationDrawerAboutUs">हमारे बारे में</string>
+    <string name="NavigationDrawerMyRequest">मेरा अनुरोध</string>
+    <string name="NavigationDrawerSetting">सेटिंग</string>
+    <string name="NavigationDrawerReferFriends">दोस्तों का संदर्भ लें</string>
+    <string name="NavigationDrawerWriteToUs">हमें लिखें</string>
+    <string name="NavigationDrawerRegisterAsPartner">साथी के रूप में रजिस्टर करें</string>
+    <string name="NavigationDrawerRateApp">एप्लिकेशन का मूल्यांकन करें</string>
+    <string name="NavigationDrawerLogout">लोग आउट</string>
+
+    <string name="footerHome">होम</string>
+    <string name="footerMessages">संदेश</string>
+    <string name="footerSettings">सेटिंग्स</string>
+    <string name="footerBookings">बुकिंग</string>
+
+    <!-- service category -->
+
+    <string name="ServiceCategoryBeauty">सुंदरता</string>
+    <string name="ServiceCategoryRepairs">मरम्मत</string>
+    <string name="ServiceCategoryCleaning">सफाई</string>
+    <string name="ServiceCategoryEventsAndFunctions">आयोजन और कार्य</string>
+    <string name="ServiceCategoryHealthAndFitness">स्वास्थ्य और फिटनेस</string>
+    <string name="ServiceCategoryTeachingForKids">बच्चों के लिए शिक्षण</string>
+    <string name="ServiceCategoryKidsActivityClasses">बच्चों की गतिविधि कक्षाएं</string>
+    <string name="ServiceCategoryWorkFromHome">घर से काम</string>
+    <string name="ServiceCategoryOther">अन्य</string>
+    <string name="ServiceCategoryWelcome">स्वागत है</string>
+
+    <string name="AccountSettingLanguage">भाषा</string>
+    <string name="SettingYouAreSignedAs">आप के द्वारा हस्ताक्षर किए गए प्रोफ़ाइल का नाम है </string>
+    <string name="AccountSettingAccount">खाता सेटिंग्स</string>
+    <string name="AccountSettingMyProfile">मेरी प्रोफाइल</string>
+    <string name="AccountSettingChangePassword">पासवर्ड बदलें</string>
+    <string name="ServiceDetailsAverageRating">औसत रेटिंग</string>
+    <string name="ServiceDetailsNumberOfVendorsRegistered">पंजीकृत विक्रेताओं की संख्या</string>
+    <string name="ServiceDetailsHowItWorks">यह काम किस प्रकार करता है</string>
+    <string name="ServiceDetailsContinue">जारी रखो</string>
+    <string name="MyRequestOpen">खोले</string>
+    <string name="MyRequestResponseReceived">प्रतिक्रिया प्राप्त हुई</string>
+    <string name="MyRequestHired">काम पर रखा</string>
+    <string name="MyRequestInProgress">चालू</string>
+
+
+
+
+
+
+</resources>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey">
+
+
+    <ImageView
+        android:id="@+id/ivHome"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/home"
+        android:paddingTop="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/tvHome"
+        app:layout_constraintEnd_toStartOf="@+id/ivMessages"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivMessages"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/message"
+        android:tint="@color/white"
+        android:paddingTop="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/tvMessages"
+        app:layout_constraintEnd_toStartOf="@+id/ivBookings"
+        app:layout_constraintStart_toEndOf="@+id/ivHome"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivBookings"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/booking"
+        android:paddingTop="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/tvBookings"
+        app:layout_constraintEnd_toStartOf="@+id/ivSettings"
+        app:layout_constraintStart_toEndOf="@+id/ivMessages"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivSettings"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/settings"
+        android:tintMode="@color/white"
+        android:tint="@color/white"
+        android:paddingTop="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/tvSettings"
+        app:layout_constraintStart_toEndOf="@+id/ivBookings"
+        app:layout_constraintEnd_toStartOf="@id/ivNotifications"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivNotifications"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/notifications"
+        android:paddingTop="8dp"
+        android:tint="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/tvNotification"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/ivSettings"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+    <TextView
+        android:id="@+id/tvHome"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:text="Home"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/tvMessages"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivHome"></TextView>
+
+    <TextView
+        android:id="@+id/tvMessages"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:text="Messages"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/tvBookings"
+        app:layout_constraintStart_toEndOf="@+id/tvHome"
+        app:layout_constraintTop_toBottomOf="@+id/ivMessages"></TextView>
+
+    <TextView
+        android:id="@+id/tvBookings"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:text="Bookings"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/tvSettings"
+        app:layout_constraintStart_toEndOf="@+id/tvMessages"
+        app:layout_constraintTop_toBottomOf="@+id/ivBookings"></TextView>
+
+    <TextView
+        android:id="@+id/tvSettings"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:text="Profile"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/tvNotification"
+        app:layout_constraintStart_toEndOf="@+id/tvBookings"
+        app:layout_constraintTop_toBottomOf="@+id/ivSettings"></TextView>
+
+    <TextView
+        android:id="@+id/tvNotification"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:text="Notifications"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvSettings"
+        app:layout_constraintTop_toBottomOf="@+id/ivNotifications"></TextView>
+
+
+
+</android.support.constraint.ConstraintLayout>

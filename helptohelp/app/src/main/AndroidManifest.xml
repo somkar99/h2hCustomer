@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.GoMobeil.H2H">
+
+    <!-- Pushy Permissions -->
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <!-- End Pushy Permissions -->
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_UPDATES" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-feature android:name="android.hardware.location.gps" />
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:hardwareAccelerated="false"
+        android:largeHeap="true"
+        android:theme="@style/AppTheme">
+
+        <!-- Pushy Declarations -->
+
+        <!-- Pushy Notification Receiver -->
+        <!-- Incoming push notifications will invoke the following BroadcastReceiver -->
+        <receiver android:name=".Services.PushReceiver" android:exported="false">
+            <intent-filter>
+                <!-- Do not modify this -->
+                <action android:name="pushy.me" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Pushy Update Receiver -->
+        <!-- Do not modify - internal BroadcastReceiver that restarts the listener service -->
+        <receiver android:name="me.pushy.sdk.receivers.PushyUpdateReceiver" android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REPLACED" />
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Pushy Boot Receiver -->
+        <!-- Do not modify - internal BroadcastReceiver that restarts the listener service -->
+        <receiver android:name="me.pushy.sdk.receivers.PushyBootReceiver" android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+
+        <!-- Pushy Socket Service -->
+        <!-- Do not modify - internal socket service -->
+        <service android:name="me.pushy.sdk.services.PushySocketService"/>
+
+        <!-- End Pushy Declarations -->
+
+
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/map_api_key" />
+
+        <activity
+            android:name=".UI.Splash"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Home"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".UI.ServiceList"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UI.ServiceQuestions"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UI.VendorList"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UI.ServiceDetails"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UI.Appointment"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".UI.ContactShare"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UI.Preview"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UI.ServiceCategory"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UI.MyRequest"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UI.Register"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UI.AddressFirst"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UI.AddressSecond"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UI.VendorsDetails"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UI.MyRequestDetails"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UI.Articles_Detail"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UI.Setting"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UI.AccountSetting"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UI.MyProfile"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UI.Message_Conv"
+
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".UI.ChangePassword"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UI.Message"
+            android:screenOrientation="portrait" />
+        <activity android:name=".UI.LoginActivity"></activity>
+
+        <activity android:name=".UI.Demo">
+
+
+        </activity>
+
+        <activity android:name=".UI.Booking"
+            android:screenOrientation="portrait"></activity>
+
+    </application>
+
+</manifest>

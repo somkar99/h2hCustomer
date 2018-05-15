@@ -1,0 +1,128 @@
+<resources>
+    <string name="app_name">help2help</string>
+
+
+    <string name="HowItWorks">1.H2H provides 100% selfless and does not take any commisions. \n\n2.For any work quote will be provide before proceeding. \n\n3.Inspection / visiting charges will need to be paid if no service is availed. These will be adjusted against final stage.</string>
+
+    <string name="termsandCondn">Terms &amp; Conditions</string>
+
+    <string name="crash_toast_text">Crash Occurred....</string>
+    <string name="crash_dialog_text">Crash Occurred....</string>
+    <string name="crash_dialog_title">Crash Report</string>
+    <string name="crash_dialog_comment_prompt">Enter your comments</string>
+    <string name="crash_dialog_ok_toast">OK</string>
+    <string name="crash_mail">zadevinay15@gmail.com</string>
+
+    <string name="selected_item">Selected item:</string>
+
+    <string name="Rs">\u20B9</string>
+
+
+    //Personalinfo
+    <string name="Name">Name</string>
+    <string name="UserName_Mandatory">UserName*</string>
+    <string name="Gender_Mandatory">Gender*</string>
+    <string name="Category_Mandatory">Category*</string>
+    <string name="Male">Male</string>
+    <string name="Female">Female</string>
+    <string name="DifferentlyAbled">Differently Abled</string>
+    <string name="Women">Women</string>
+    <string name="Elderly">Elderly</string>
+    <string name="General">General</string>
+    <string name="AlternateNo">Alternate No</string>
+    <string name="Landline">Landline Number</string>
+    <string name="ResAdd">Resident Address</string>
+    <string name="Reset">Reset</string>
+    <string name="Save">Save</string>
+    <string name="ContactDetails">Contact Details*</string>
+    <string name="AddAddress">Click Here To Add Address</string>
+
+    <string name="address">Residential Address</string>
+
+    <string name="PrimaryBusiness">Primary Business</string>
+    <string name="MobileNumber">Mobile Number</string>
+
+    <string name="emailid">Email</string>
+
+
+    <string name="map_api_key">AIzaSyAeRYCo3X9eNwKIoEZYPHLmLKeEpzHuBws</string>
+
+    <string name="addLine1">add line1</string>
+    <string name="addLine2">add line2</string>
+    <string name="addCity">city</string>
+    <string name="addState">State</string>
+    <string name="addPincode">Pincode</string>
+
+
+    <string name="flatroom">Flat/Room</string>
+
+    <string name="Locality">Locality</string>
+
+    <!-- start -->
+
+    <string name="HomeServiceCategory">Service Category</string>
+    <string name="HomeArticles">Articles</string>
+    <string name="HomeServiceName">Service Name</string>
+    <string name="NavigationDrawerAboutUs">About US</string>
+    <string name="NavigationDrawerMyRequest">My Request</string>
+    <string name="NavigationDrawerSetting">Setting</string>
+    <string name="NavigationDrawerReferFriends">Refer Friends</string>
+    <string name="NavigationDrawerWriteToUs">Write To Us</string>
+    <string name="NavigationDrawerRegisterAsPartner">Register As Partner</string>
+    <string name="NavigationDrawerRateApp">Rate App</string>
+    <string name="NavigationDrawerLogout">Logout</string>
+
+    <string name="footerHome">Home</string>
+    <string name="footerMessages">Messages</string>
+    <string name="footerSettings">Settings</string>
+    <string name="footerBookings">Bookings</string>
+
+    <!-- service category -->
+
+    <string name="ServiceCategoryBeauty">Beauty</string>
+    <string name="ServiceCategoryRepairs">Repairs</string>
+    <string name="ServiceCategoryCleaning">Cleaning</string>
+    <string name="ServiceCategoryEventsAndFunctions">Events &#38; Functions</string>
+    <string name="ServiceCategoryHealthAndFitness">Health &#38; Fitness</string>
+    <string name="ServiceCategoryTeachingForKids">Teaching For Kids</string>
+    <string name="ServiceCategoryKidsActivityClasses">Kids Activity Classes</string>
+    <string name="ServiceCategoryWorkFromHome">Work From Home</string>
+    <string name="ServiceCategoryOther">Other</string>
+    <string name="ServiceCategoryWelcome">Welcome</string>
+
+
+
+
+    <string name="AccountSettingLanguage">Language</string>
+    <string name="SettingYouAreSignedAs">You are Signed as</string>
+    <string name="AccountSettingAccount">Account Settingss</string>
+    <string name="AccountSettingMyProfile">My Profile</string>
+    <string name="AccountSettingChangePassword">Change password</string>
+    <string name="ServiceDetailsAverageRating">Average Rating</string>
+    <string name="ServiceDetailsNumberOfVendorsRegistered">Number of vendors registered</string>
+    <string name="ServiceDetailsHowItWorks">How it works</string>
+    <string name="ServiceDetailsContinue">Continue</string>
+    <string name="MyRequestOpen">Open</string>
+    <string name="MyRequestResponseReceived">Response Received</string>
+    <string name="MyRequestHired">Hired</string>
+    <string name="MyRequestInProgress">In Progress</string>
+
+
+    <!--Address-->
+
+    <string name="ok">Ok</string>
+    <string name="cancel">Cancel</string>
+    <string name="change">Change</string>
+    <string name="FlatNo">Change</string>
+    <string name="Address">Address</string>
+
+    <string name="open">Open</string>
+    <string name="response_received">Response Received</string>
+    <string name="Hired">Hired</string>
+    <string name="ongoing">OnGoing</string>
+
+    <string name="Internet_Down">Internet Network Down</string>
+
+    <string name="Parameters_Incorrect">Parameters are not correct</string>
+
+</resources>

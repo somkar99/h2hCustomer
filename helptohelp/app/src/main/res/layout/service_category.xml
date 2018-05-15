@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="4dp"
+    android:orientation="vertical"
+    android:layout_weight="0.99">
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:minHeight="200dp"
+        android:layout_margin="4dp"
+
+        android:elevation="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:textSize="18sp"
+            android:layout_marginLeft="10dp"
+            android:text="Which Category of Service Provider would you like to select?"/>
+
+
+        <RadioGroup
+            android:id="@+id/rgServiceCat"
+            android:layout_width="match_parent"
+            android:layout_height="270dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp">
+
+            <RadioButton
+                android:id="@+id/rbDifferentlyAbled"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:buttonTint="@color/green"
+                android:checked="true"
+                android:text="Differently Abled"/>
+
+
+            <RadioButton
+                android:id="@+id/rbWomen"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:buttonTint="@color/green"
+                android:text="Women"/>
+
+
+            <RadioButton
+                android:id="@+id/rbElderly"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:buttonTint="@color/green"
+                android:text="Elderly"/>
+
+
+            <RadioButton
+                android:id="@+id/rbGeneral"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:buttonTint="@color/green"
+                android:text="General"/>
+        </RadioGroup>
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
+
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+
+
+        <Button
+            android:id="@+id/cbContinue"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="4dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_border"
+            android:text="Continue"
+            android:textStyle="bold"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="50dp"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <TextView
+            android:id="@+id/tvOverview"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Overview"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/tvWorkAlbum"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Work Album"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/tvPricing"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Pricing"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:weightSum="3"
+        android:orientation="horizontal">
+
+        <View
+            android:id="@+id/viewOverview"
+            android:layout_width="0dp"
+            android:layout_height="3dp"
+            android:layout_weight="1"
+            android:background="@color/black"></View>
+
+        <View
+            android:id="@+id/viewWorkAlbum"
+            android:layout_width="0dp"
+            android:layout_height="3dp"
+            android:layout_weight="1"
+            android:background="@color/green_50"></View>
+
+        <View
+            android:id="@+id/viewReview"
+            android:layout_width="0dp"
+            android:layout_height="3dp"
+            android:layout_weight="1"
+            android:background="@color/green_50"></View>
+
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+
+            <LinearLayout
+                android:id="@+id/llOverview1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="140dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+
+                <com.github.siyamed.shapeimageview.CircularImageView
+                    android:id="@+id/ivVendor"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="20sp"
+                    android:src="@drawable/usernewicon"
+                    android:layout_marginTop="20dp"
+                    />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.9"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tvName"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="20sp"
+                            android:layout_marginTop="30dp"
+                            android:gravity="center_vertical"
+                            android:maxLines="1"
+
+                            android:textColor="@color/black"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+
+                        <TextView
+                            android:id="@+id/tvSp_primarybusiness"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="20sp"
+                            android:gravity="center_vertical"
+                            android:maxLines="1"
+
+                            android:textColor="@color/black"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/vd_spdetails"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:gravity="center_horizontal"
+                    android:maxLines="4"
+                    android:textSize="16sp"
+                    android:text=""
+                    />
+            </LinearLayout>
+
+
+
+            <View
+                android:id="@+id/view1"
+                android:layout_width="match_parent"
+                android:layout_height="12dp"
+                android:background="@color/green_50"></View>
+
+
+
+
+            <LinearLayout
+                android:id="@+id/llWorkAlbum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Work Albums"
+                    android:padding="8dp"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"/>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rcvWorkAlbum"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+
+                </android.support.v7.widget.RecyclerView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llOverview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+
+                >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="30dp"
+                android:orientation="vertical"
+                android:weightSum="1">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="30dp"
+                android:layout_weight="0.5"
+                android:paddingLeft="10dp"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/green"
+                android:gravity="center_vertical"
+
+
+                android:text="Business Name "/>
+
+                <TextView
+                    android:id="@+id/tvBusinessName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="30dp"
+                    android:paddingLeft="10dp"
+                    android:layout_weight="0.5"
+                    android:gravity="center_vertical"
+                   />
+
+            </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/grey111"></View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="30dp"
+                android:orientation="vertical"
+                android:weightSum="1">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="30dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/green"
+                    android:layout_weight="0.5"
+                    android:text="Business Introduction "/>
+
+                <TextView
+                    android:id="@+id/tvBusinessIntro"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="30dp"
+                    android:paddingLeft="10dp"
+                    android:gravity="center_vertical"
+                    android:layout_weight="0.5"
+                    />
+
+            </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/grey111"></View>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="30dp"
+                android:orientation="vertical"
+
+                android:weightSum="1">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="30dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:textSize="18sp"
+                    android:textColor="@color/green"
+                    android:textStyle="bold"
+                    android:layout_weight="0.5"
+                    android:text="Business USP "/>
+
+                <TextView
+                    android:id="@+id/tvBusinessUSP"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="30dp"
+                    android:layout_weight="0.5"
+                    android:paddingLeft="10dp"
+                    />
+
+            </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/grey111"></View>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="30dp"
+                android:orientation="vertical"
+                android:weightSum="1">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="30dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:layout_weight="0.5"
+                    android:textColor="@color/green"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:text="Established On "/>
+
+                <TextView
+                    android:id="@+id/tvBusinessEstablishOn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="30dp"
+                    android:layout_weight="0.5"
+                    android:paddingLeft="10dp"
+                    />
+
+            </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/grey111"></View>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="30dp"
+                android:orientation="vertical"
+                android:weightSum="1">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="30dp"
+                    android:layout_weight="0.5"
+                    android:gravity="center_vertical"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/green"
+                    android:paddingLeft="10dp"
+                    android:text="Contact Number "/>
+
+                <TextView
+                    android:id="@+id/tvBusinessContactNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="30dp"
+                    android:paddingLeft="10dp"
+                    android:layout_weight="0.5"
+                    />
+
+            </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/white"></View>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llPricing"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:visibility="gone"
+
+                >
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rcvPricing"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+
+                </android.support.v7.widget.RecyclerView>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>
